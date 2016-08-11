@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Author : Vasantha Hassan Ravikumar  -->
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- <script src="http://eric.clst.org/wupl/Stuff/gz_2010_us_040_00_500k.json"></script> -->
+<script type="text/javascript" src="../jsfiles/graph.js"></script>
+
+
+<style>
+
+.y.axisRight text {
+    fill: orange;
+}
+.y.axisLeft text {
+    fill: steelblue;
+}
+/* .axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+} */
+.bar1 {
+  fill: steelblue;
+}
+.bar2 {
+  fill: orange;
+}
+/* .x.axis path {
+  display: none;
+} */
+</style>
+</head>
+<body>
+<div>
+<div>
+	<!-- <h1>US Graph</h1> -->
+	<div id ="usmap" style="float:left"></div>
+	<!-- <h1>Readmission graph</h1> -->
+	<div id ="readmissioLineGraph" style="float:left; width:50%; height:50%"></div>
+	
+<div>
+
+<div>
+	<!-- <h1>Education graph</h1> -->
+	<div id ="educationLevel" style="float:left"></div>
+	<!-- <h1>US Race graph</h1> -->
+	<div id ="usrace" style="float:left"></div>
+</div>
+	
+	<div>
+	<!-- <h1>US Population& Poverty</h1> -->
+	<div id ="poppoverty" style="float:left"></div>
+	<!-- <h1>Age chart</h1> -->
+	<div id ="agechart" style="float:left"></div>
+	</div>
+<div>
+
+<!-- <h1>Hospital Class chart</h1> -->
+	<div id ="classchart" style="float:left"></div>
+	<!-- <h1>Penalty chart</h1> -->
+	<div id ="penaltyidchart" style="float:left"></div>
+</div>
+	
+	<div>
+	<!-- <h1>Readmission & No. Case chart</h1> -->
+	<div id ="readcaseidchart" style="float:left"></div>
+	</div>
+	
+</div>	
+	
+	<script>
+	usStates();
+	readmissionLineGraph(null);
+	
+	
+	</script>
+</body>
+</html>
